@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# Data
+*.npy
+*.tfm
+*.dcm
+*.nii.gz
+*.nii
+
+# OS
+.DS_Store
+Thumbs.db
