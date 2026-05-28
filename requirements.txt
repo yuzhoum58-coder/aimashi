@@ -5,3 +5,5 @@ pydicom>=3.1
 numpy>=1.26
 scipy>=1.14
 scikit-image>=0.25
+pyvista>=0.44       # VTK高级封装 - 3D体绘制/网格/模型
+pyvistaqt>=0.12     # pyvista嵌入PySide6

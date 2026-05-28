@@ -57,6 +57,32 @@ src/
 - **第2周**: 多模态叠加 + 手动配准 (核心功能)
 - **第3周**: 阈值分割 + 3D模型 + 模拟置钉 + 导出
 
-## 详情
+## 开源库路线
 
-KB: https://github.com/yuzhoum58-coder/-
+| 层级 | 选型 | 用途 |
+|:----|:-----|:-----|
+| GUI框架 | **PySide6** | 桌面应用底座 |
+| 3D渲染（MPR/体绘制） | **VTK 原生** | 四视图MPR + 体绘制 |
+| 3D（网格/模型） | **pyvista** | VTK高级封装，省样板代码 |
+| 医学图像处理 | **SimpleITK** | DICOM读序列+配准+分割 |
+| DICOM解析 | **pydicom** | Tag解析 |
+| 图像处理 | **scikit-image** | 阈值+形态学 |
+
+详见 `docs/references/library_audit_report.md` 全部库的核查报告。
+
+## 研发资料
+
+所有调研文档、库清单、开发计划都在 `docs/` 目录下：
+
+```
+docs/
+├── README.md                                    # 文档索引
+├── research/                                    # 调研文档
+│   ├── 01_feasibility_report_python.md           # 可行性报告
+│   ├── 02_python_library_survey.md               # 15库+5项目调研
+│   ├── 03_requirements_v0.2.md                   # 需求文档
+│   └── 04_development_plan.md                    # 3周开发计划
+└── references/
+    ├── open_source_projects.md                   # 开源参考项目清单
+    └── library_audit_report.md                   # 库核查报告
+```
